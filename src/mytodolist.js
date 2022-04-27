@@ -32,11 +32,7 @@ function Todolist({ addTodo }) {
     );
 }
 function App() {
-    const [lista, setLista] = useState([
-        {
-
-        }
-    ]);
+    const [lista, setLista] = useState([]);
     const addTodo = text => {
         const nuevalista = [...lista, { text }];
         setLista(nuevalista)
